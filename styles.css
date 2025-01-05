@@ -20,12 +20,15 @@ header {
 }
 
 .logo {
-    width: 100px;  /* Ajuste o tamanho do logotipo conforme necessário */
+    height: 100%;  /* A altura será ajustada pela altura do pai, que é o header */
+    max-height: 3em;  /* Altura máxima do logotipo */
     margin-right: 20px;
 }
 
 h1 {
     font-size: 3em;
+    margin: 0;
+    line-height: 1em;  /* A altura da linha será igual ao tamanho da fonte */
 }
 
 iframe {
@@ -47,5 +50,9 @@ iframe {
         width: 90vw;  /* Utiliza 90% da largura da viewport */
         max-width: none;  /* Remove a limitação de largura máxima */
         height: 900px; /* Mantém a altura fixa */
+    }
+
+    .logo {
+        max-height: 2em;  /* Ajusta a altura máxima do logotipo em telas menores */
     }
 }
