@@ -48,7 +48,7 @@ iframe {
 
     iframe {
         width: 90vw;  /* Utiliza 90% da largura da viewport */
-        max-width: none;  /* Remove a limitação de largura máxima */
+        max-width: 639px;  /* Remove a limitação de largura máxima */
         height: 900px; /* Mantém a altura fixa */
     }
 
