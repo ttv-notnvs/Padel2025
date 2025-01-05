@@ -13,9 +13,19 @@ body {
     color: #fff;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 100px;  /* Ajuste o tamanho do logotipo conforme necessário */
+    margin-right: 20px;
+}
+
 h1 {
     font-size: 3em;
-    margin: 20px 0;
 }
 
 iframe {
