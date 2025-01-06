@@ -265,3 +265,14 @@ footer {
 .btn:hover {
     background-color: #0056b3;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .useful-links {
+        max-width: 260px;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+}
