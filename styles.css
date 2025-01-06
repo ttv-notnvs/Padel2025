@@ -31,13 +31,32 @@ h1 {
     line-height: 1em;  /* A altura da linha será igual ao tamanho da fonte */
 }
 
-iframe {
+.iframe-small {
     border: 5px solid #fff;
     border-radius: 10px;
     opacity: 0.8;
     width: 90vw;  /* Utiliza 90% da largura da viewport */
     max-width: 639px; /* Limita a largura máxima */
-    height: 900px; /* Mantém a altura fixa */
+    height: 250px; /* Mantém a altura fixa específica */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+}
+
+.iframe-large {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 90vw;  /* Utiliza 90% da largura da viewport */
+    max-width: 639px; /* Limita a largura máxima */
+    height: 900px; /* Mantém a altura fixa específica */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+}
+
+footer {
+    margin-top: auto;  /* Empurra o rodapé para o final da página */
+    padding: 10px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
 }
 
 /* Estilos responsivos */
@@ -46,10 +65,18 @@ iframe {
         font-size: 2em;
     }
 
-    iframe {
+    .iframe-small {
         width: 90vw;  /* Utiliza 90% da largura da viewport */
         max-width: 639px;  /* Remove a limitação de largura máxima */
-        height: 900px; /* Mantém a altura fixa */
+        height: 230px; /* Mantém a altura fixa específica */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+    }
+
+    .iframe-large {
+        width: 90vw;  /* Utiliza 90% da largura da viewport */
+        max-width: 639px;  /* Remove a limitação de largura máxima */
+        height: 900px; /* Mantém a altura fixa específica */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
     }
 
     .logo {
