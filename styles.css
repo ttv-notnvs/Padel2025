@@ -61,6 +61,10 @@ footer {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+    body {
+        height: auto;  /* Ajusta a altura do body para dispositivos móveis */
+    }
+
     h1 {
         font-size: 2em;
     }
