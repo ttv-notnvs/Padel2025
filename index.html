@@ -9,13 +9,23 @@
 </head>
 <body>
     <header>
-        <img src="logofip.png" alt="Logo FIP" class="logo">
-        <h1>Padel 2025</h1>
+        <nav class="menu">
+            <button class="menu-btn">☰</button>
+            <ul class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="campos.html">Campos de Padel</a></li>
+                <li><a href="links.html">Links úteis</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <img src="padelfipnot.png" alt="Logo notFIP" class="logo">
+            <h1>Padel 2025</h1>
+        </div>
     </header>
     <iframe class="iframe-small" 
             frameborder="0" 
             scrolling="no" 
-            src="https://onedrive.live.com/embed?resid=303FD98AF91C62B6%2122246&authkey=%21AL1mRrn425yCUp8&em=2&wdAllowInteractivity=False&ActiveCell='Sheet1'!D4&Item='Sheet1'!A1%3AM10&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True">
+            src="https://onedrive.live.com/embed?resid=303FD98AF91C62B6%2122246&authkey=%21AL1mRrn425yCUp8&em=2&wdAllowInteractivity=False&ActiveCell='Sheet1'!C4&Item='Sheet1'!A1%3AM10&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True">
     </iframe>
     <iframe class="iframe-large" 
             frameborder="0" 
@@ -25,5 +35,11 @@
     <footer>
         <p>criado por notnvs para os Padeleiros 2025</p>
     </footer>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            document.querySelector('.menu-list').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
