@@ -1,5 +1,5 @@
 body {
-    background-image: url('fundopadel.jpg');
+    background-image: url('images/fundopadel.jpg');
     background-size: cover;
     background-position: center;
     font-family: 'Arial', sans-serif;
@@ -118,31 +118,6 @@ footer {
     text-align: center;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    .iframe-small {
-        width: 90vw;  /* Utiliza 90% da largura da viewport */
-        max-width: 639px;  /* Remove a limitação de largura máxima */
-        height: 230px; /* Mantém a altura fixa específica */
-        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
-    }
-
-    .iframe-large {
-        width: 90vw;  /* Utiliza 90% da largura da viewport */
-        max-width: 639px;  /* Remove a limitação de largura máxima */
-        height: 900px; /* Mantém a altura fixa específica */
-        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
-    }
-
-    .logo {
-        max-height: 2em;  /* Ajusta a altura máxima do logotipo em telas menores */
-    }
-}
-
 .location-container {
     display: flex;
     align-items: flex-start;  /* Alinha os itens ao início do contêiner */
@@ -182,37 +157,6 @@ footer {
     max-width: 300px;
     height: 225px;
     margin-left: 20px;  /* Adiciona espaço entre o texto/imagem e o iframe */
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .location-container {
-        flex-direction: column;  /* Alinha os elementos em coluna */
-        align-items: flex-start;  /* Alinha os itens ao início do contêiner */
-    }
-
-    .location-info {
-        margin: 0 0 10px 0;
-        
-        max-height: none;
-        max-width: 260px;
-    }
-
-    .image-container {
-        margin-top: 10px;
-        margin-bottom: 10px;  /* Adiciona margem acima e abaixo da imagem */
-        
-    }
-
-    .location-info img {
-        max-width: 260px;
-    }
-
-    .iframe {
-        width: 100%;
-        margin: 10px 0;  /* Adiciona margem acima e abaixo do iframe */
-        max-width: 260px;
-    }
 }
 
 /* Estilos dos Links Úteis */
@@ -266,13 +210,150 @@ footer {
     background-color: #0056b3;
 }
 
-/* Estilos responsivos */
+/* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .iframe-small {
+        width: 90vw;  /* Utiliza 90% da largura da viewport */
+        max-width: 639px;  /* Remove a limitação de largura máxima */
+        height: 230px; /* Mantém a altura fixa específica */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+    }
+
+    .iframe-large {
+        width: 90vw;  /* Utiliza 90% da largura da viewport */
+        max-width: 639px;  /* Remove a limitação de largura máxima */
+        height: 900px; /* Mantém a altura fixa específica */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+    }
+
+    .logo {
+        max-height: 2em;  /* Ajusta a altura máxima do logotipo em telas menores */
+    }
+    
+    .location-container {
+        flex-direction: column;  /* Alinha os elementos em coluna */
+        align-items: flex-start;  /* Alinha os itens ao início do contêiner */
+    }
+
+    .location-info {
+        margin: 0 0 10px 0;
+        
+        max-height: none;
+        max-width: 260px;
+    }
+
+    .image-container {
+        margin-top: 10px;
+        margin-bottom: 10px;  /* Adiciona margem acima e abaixo da imagem */
+    }
+
+    .location-info img {
+        max-width: 260px;
+    }
+
+    .iframe {
+        width: 100%;
+        margin: 10px 0;  /* Adiciona margem acima e abaixo do iframe */
+        max-width: 260px;
+    }
+    
     .useful-links {
         max-width: 260px;
     }
 
     .btn {
         margin-bottom: 10px;
+    }
+
+    .newsimage-container img.expanded {
+        width: auto;
+        height: auto;
+        max-height: calc(100vh - 40px);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
+/* 1. Secção dentro de main com 600px de largura */
+.news-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 2. Alinhar título e texto à esquerda */
+.news-info h2,
+.news-info p {
+    text-align: left;
+}
+
+/* 3. Centralizar imagem e ajustá-la à largura da secção, mantendo a proporção */
+.newsimage-container img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* 4. Aumentar a imagem para o tamanho da janela em desktop */
+.newsimage-container img.expanded {
+    width: auto;
+    height: auto;
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 40px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+/* Sobreposição escurecida */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: none;
+}
+
+/* Exibir sobreposição quando a imagem estiver expandida */
+.overlay.show {
+    display: block;
+}
+
+/* Estilo da imagem expandida em dispositivos móveis */
+@media (max-width: 768px) {
+    .newsimage-container img.expanded {
+        width: auto;
+        height: 100vh;
+        max-width: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        border-radius: 10px;
+        overflow: auto;
     }
 }
