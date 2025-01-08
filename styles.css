@@ -95,8 +95,18 @@ h1 {
     border-radius: 10px;
     opacity: 0.8;
     width: 90vw;  /* Utiliza 90% da largura da viewport */
-    max-width: 639px; /* Limita a largura máxima */
-    height: 250px; /* Mantém a altura fixa específica */
+    max-width: 625px; /* Limita a largura máxima */
+    height: 230px; /* Mantém a altura fixa específica */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+}
+
+.iframe-medium {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 90vw;  /* Utiliza 90% da largura da viewport */
+    max-width: 625px; /* Limita a largura máxima */
+    height: 330px; /* Mantém a altura fixa específica */
     margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
 }
 
@@ -105,8 +115,8 @@ h1 {
     border-radius: 10px;
     opacity: 0.8;
     width: 90vw;  /* Utiliza 90% da largura da viewport */
-    max-width: 639px; /* Limita a largura máxima */
-    height: 900px; /* Mantém a altura fixa específica */
+    max-width: 625px; /* Limita a largura máxima */
+    height: 600px; /* Mantém a altura fixa específica */
     margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
 }
 
@@ -218,14 +228,21 @@ footer {
 
     .iframe-small {
         width: 90vw;  /* Utiliza 90% da largura da viewport */
-        max-width: 639px;  /* Remove a limitação de largura máxima */
+        max-width: 625px;  /* Remove a limitação de largura máxima */
         height: 230px; /* Mantém a altura fixa específica */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+    }
+
+    .iframe-medium {
+        width: 90vw;  /* Utiliza 90% da largura da viewport */
+        max-width: 625px;  /* Remove a limitação de largura máxima */
+        height: 900px; /* Mantém a altura fixa específica */
         margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
     }
 
     .iframe-large {
         width: 90vw;  /* Utiliza 90% da largura da viewport */
-        max-width: 639px;  /* Remove a limitação de largura máxima */
+        max-width: 625px;  /* Remove a limitação de largura máxima */
         height: 900px; /* Mantém a altura fixa específica */
         margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
     }
@@ -349,6 +366,7 @@ footer {
         width: auto;
         height: 100vh;
         max-width: none;
+        max-height: 500px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

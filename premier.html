@@ -32,7 +32,7 @@
                 <h2>Calendário Premier Padel 2025</h2>
                 <p>Qatar Airways Premier Padel Tour revela calendário para 2025</p>
                 <div class="newsimage-container">
-                    <img src="images/calendarioPremierPadel.jpg" alt="Calendário Premier Padel">
+                    <img id="calendario-img" src="images/calendarioPremierPadel.jpg" alt="Calendário Premier Padel">
                 </div>
                 <p>O calendário de 2025 das principais quatro provas, Majors, vai colocar os melhores jogadores do mundo a competir no Qatar (14-19 abril) e em Itália (9-15 junho) na primeira metade da época e França (8-14 setembro) e o México (24-30 novembro) a receberem os outros dois torneios Major.</p>
                 <p>As Finais Premier Padel da Qatar Airways regressarão a Barcelona em 2025 para a sua segunda edição na semana entre 8 e 14 de dezembro.</p>
@@ -50,17 +50,21 @@
             document.querySelector('.menu-list').classList.toggle('show');
         });
 
-        const img = document.querySelector('.newsimage-container img');
+        const img = document.querySelector('#calendario-img');
         const overlay = document.querySelector('.overlay');
 
         img.addEventListener('click', function() {
-            this.classList.toggle('expanded');
-            overlay.classList.toggle('show');
-
-            if (this.classList.contains('expanded')) {
-                document.body.style.overflow = 'hidden';  // Desabilita a rolagem do corpo
+            if (window.innerWidth <= 768) {
+                window.open(this.src, '_blank');
             } else {
-                document.body.style.overflow = '';  // Habilita a rolagem do corpo
+                this.classList.toggle('expanded');
+                overlay.classList.toggle('show');
+
+                if (this.classList.contains('expanded')) {
+                    document.body.style.overflow = 'hidden';  // Desabilita a rolagem do corpo
+                } else {
+                    document.body.style.overflow = '';  // Habilita a rolagem do corpo
+                }
             }
         });
 
