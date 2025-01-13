@@ -90,33 +90,53 @@ h1 {
     line-height: 1em;  /* A altura da linha será igual ao tamanho da fonte */
 }
 
-.iframe-small {
+.iframe-individualano {
     border: 5px solid #fff;
     border-radius: 10px;
     opacity: 0.8;
     width: 90vw;  /* Utiliza 90% da largura da viewport */
     max-width: 625px; /* Limita a largura máxima */
-    height: 230px; /* Mantém a altura fixa específica */
+    height: 410px; /* Mantém a altura fixa específica */
     margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
 }
 
-.iframe-medium {
+.iframe-individualtrimestre {
     border: 5px solid #fff;
     border-radius: 10px;
     opacity: 0.8;
     width: 90vw;  /* Utiliza 90% da largura da viewport */
     max-width: 625px; /* Limita a largura máxima */
-    height: 330px; /* Mantém a altura fixa específica */
+    height: 765px; /* Mantém a altura fixa específica */
     margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
 }
 
-.iframe-large {
+.iframe-equipasano {
     border: 5px solid #fff;
     border-radius: 10px;
     opacity: 0.8;
     width: 90vw;  /* Utiliza 90% da largura da viewport */
     max-width: 625px; /* Limita a largura máxima */
-    height: 600px; /* Mantém a altura fixa específica */
+    height: 610px; /* Mantém a altura fixa específica */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+}
+
+.iframe-equipastrimestre {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 90vw;  /* Utiliza 90% da largura da viewport */
+    max-width: 625px; /* Limita a largura máxima */
+    height: 1170px; /* Mantém a altura fixa específica */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+}
+
+.iframe-jogos {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 90vw;  /* Utiliza 90% da largura da viewport */
+    max-width: 625px; /* Limita a largura máxima */
+    height: 750px; /* Mantém a altura fixa específica */
     margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
 }
 
@@ -137,7 +157,22 @@ footer {
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;  /* Define a largura máxima da div */
+    box-sizing: border-box;
 }
+
+.location-containermaps {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* Largura máxima de 600px */
+    width: 100%; /* Ocupa toda a largura disponível */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
 
 .location-info {
     text-align: left;
@@ -145,15 +180,44 @@ footer {
     max-width: 250px;
 }
 
+.location-maps {
+    text-align: left;
+    flex: 1;
+    max-width: 100%; /* Garante que ocupe toda a largura do contêiner pai */
+}
+
+
 .location-info p {
     margin: 5px 0;
     max-width: 250px;
+}
+
+.location-maps p {
+    margin: 5px 0;
+    max-width: 580px;
 }
 
 .image-container {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+}
+
+.image-maps {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+}
+
+.image-maps a {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+}
+
+.image-maps img {
+    max-width: 75%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
 }
 
 .location-info img {
@@ -287,24 +351,53 @@ footer {
         font-size: 2em;
     }
 
-    .iframe-small {
+    .iframe-individualano {
+        border: 5px solid #fff;
+        border-radius: 10px;
+        opacity: 0.8;
         width: 90vw;  /* Utiliza 90% da largura da viewport */
-        max-width: 625px;  /* Remove a limitação de largura máxima */
-        height: 230px; /* Mantém a altura fixa específica */
+        max-width: 625px; /* Limita a largura máxima */
+        height: 410px; /* Mantém a altura fixa específica */
         margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
     }
-
-    .iframe-medium {
+    
+    .iframe-individualtrimestre {
+        border: 5px solid #fff;
+        border-radius: 10px;
+        opacity: 0.8;
         width: 90vw;  /* Utiliza 90% da largura da viewport */
-        max-width: 625px;  /* Remove a limitação de largura máxima */
-        height: 330px; /* Mantém a altura fixa específica */
+        max-width: 625px; /* Limita a largura máxima */
+        height: 765px; /* Mantém a altura fixa específica */
         margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
     }
-
-    .iframe-large {
+    
+    .iframe-equipasano {
+        border: 5px solid #fff;
+        border-radius: 10px;
+        opacity: 0.8;
         width: 90vw;  /* Utiliza 90% da largura da viewport */
-        max-width: 625px;  /* Remove a limitação de largura máxima */
-        height: 600px; /* Mantém a altura fixa específica */
+        max-width: 625px; /* Limita a largura máxima */
+        height: 610px; /* Mantém a altura fixa específica */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+    }
+    
+    .iframe-equipastrimestre {
+        border: 5px solid #fff;
+        border-radius: 10px;
+        opacity: 0.8;
+        width: 90vw;  /* Utiliza 90% da largura da viewport */
+        max-width: 625px; /* Limita a largura máxima */
+        height: 1170px; /* Mantém a altura fixa específica */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+    }
+    
+    .iframe-jogos {
+        border: 5px solid #fff;
+        border-radius: 10px;
+        opacity: 0.8;
+        width: 90vw;  /* Utiliza 90% da largura da viewport */
+        max-width: 625px; /* Limita a largura máxima */
+        height: 750px; /* Mantém a altura fixa específica */
         margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
     }
 

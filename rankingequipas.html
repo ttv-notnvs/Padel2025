@@ -25,34 +25,16 @@
             <h1>Padel 2025</h1>
         </div>
     </header>
-    
-    <main>
-        <section class="useful-links">
-            <h2>Aplicações de Reserva de Campos</h2>
-            <div class="link-card">
-                <h3>Playtomic</h3>
-                <p>
-                    <a href="https://apps.apple.com/app/id1242321076" class="btn" target="_blank">iOS 🍎</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.playtomic&pcampaignid=web_share" class="btn">Android 🤖</a>
-                </p>
-            </div>
-            <div class="link-card">
-                <h3>TiePLayer</h3>
-                <p>
-                    <a href="https://apps.apple.com/app/id1453669679" class="btn" target="_blank">iOS 🍎</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.Tiesports.PlayerApp&pcampaignid=web_share" class="btn">Android 🤖</a>
-                </p>
-            </div>
-            <div class="link-card">
-                <h3>Racket ID</h3>
-                <p>
-                    <a href="https://apps.apple.com/us/app/racket-id/id6480926395" class="btn" target="_blank">iOS 🍎</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.staffanklashed.racketid&pcampaignid=web_share" class="btn">Android 🤖</a>
-                </p>
-            </div>
-        </section>
-    </main>
-    
+    <iframe class="iframe-equipasano" 
+            frameborder="0" 
+            scrolling="no" 
+            src="https://onedrive.live.com/embed?resid=303fd98af91c62b6%2127152&authkey=%21AIogFQ7x5U37RhE&em=2&wdAllowInteractivity=False&Item='Duplas%20Anual'!A1%3AJ28&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True">
+    </iframe>
+    <iframe class="iframe-equipastrimestre" 
+            frameborder="0" 
+            scrolling="no" 
+            src="https://onedrive.live.com/embed?resid=303fd98af91c62b6%2127152&authkey=%21AIogFQ7x5U37RhE&em=2&wdAllowInteractivity=False&Item='Duplas%20Trimestre'!A1%3AJ56&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True">
+    </iframe>
     <footer>
         <p>criado por notnvs para os Padeleiros 2025</p>
     </footer>
@@ -61,6 +43,8 @@
         document.querySelector('.menu-btn').addEventListener('click', function() {
             document.querySelector('.menu-list').classList.toggle('show');
         });
+
+        document.getElementById('meuIframe').onload = function() { this.contentWindow.document.body.style.overflow = 'hidden'; };
     </script>
 </body>
 </html>
