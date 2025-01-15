@@ -410,11 +410,27 @@ footer {
         align-items: flex-start;  /* Alinha os itens ao início do contêiner */
     }
 
+    .location-containermaps {
+        flex-direction: column;  /* Alinha os elementos em coluna */
+        align-items: flex-start;  /* Alinha os itens ao início do contêiner */
+    }
+
     .location-info {
         margin: 0 0 10px 0;
-        
         max-height: none;
         max-width: 260px;
+    }
+
+    .location-maps {
+        margin: 0 0 10px 0;
+        max-height: none;
+        max-width: 260px;
+    }
+
+    .location-maps p {
+        margin: 5px 0;
+        max-width: 260px;
+        margin-bottom: 10px;
     }
 
     .image-container {
@@ -422,8 +438,17 @@ footer {
         margin-bottom: 10px;  /* Adiciona margem acima e abaixo da imagem */
     }
 
+    .image-maps {
+        margin-top: 10px;
+    }
+
     .location-info img {
         max-width: 260px;
+    }
+
+    .image-maps img {
+        max-width: 260px;
+        margin-top: 10px;
     }
 
     .iframe {
