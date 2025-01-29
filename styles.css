@@ -466,11 +466,17 @@ footer {
     }
 
     .news-container {
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 20px;
-        border-radius: 10px;
+        max-width: 90%; /* Limita a largura do container a 90% da viewport */
+        padding: 10px; /* Ajusta o padding para dispositivos móveis */
+    }
+
+    .news-info {
+        margin: 0 auto; /* Centraliza o conteúdo dentro do container */
+    }
+
+    /* Se houver um campo específico dentro do container, ajustá-lo assim */
+    .news-container input {
+        max-width: 100%; /* Garante que o campo ocupe até 100% da largura do container */
     }
 
     .newsimage-container img {
