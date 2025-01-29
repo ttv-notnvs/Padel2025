@@ -465,6 +465,23 @@ footer {
         margin-bottom: 10px;
     }
 
+    .news-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .newsimage-container img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
     .newsimage-container img.expanded {
         width: auto;
         height: auto;
