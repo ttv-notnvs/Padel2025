@@ -488,28 +488,11 @@ footer {
         border-radius: 10px;
     }
 
-    .newsimage-container img.expanded {
-        width: auto;
-        height: auto;
-        max-height: calc(100vh - 40px);
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
-        border-radius: 10px;
-    }
-
-    .newsimage-container img.expanded {
-        width: auto;
-        height: 100vh;
-        max-width: none;
-        max-height: 500px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
-        border-radius: 10px;
-        overflow: auto;
-    }
 }
+
+
+
+
+
+
+
