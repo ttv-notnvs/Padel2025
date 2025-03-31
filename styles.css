@@ -90,6 +90,12 @@ h1 {
     line-height: 1em;  /* A altura da linha será igual ao tamanho da fonte */
 }
 
+h2 {
+    font-size: 1em;
+    margin: 10;
+    line-height: 1em;  /* A altura da linha será igual ao tamanho da fonte */
+}
+
 .iframe-individualano {
     border: 5px solid #fff;
     border-radius: 10px;
@@ -97,6 +103,16 @@ h1 {
     width: 90vw;  /* Utiliza 90% da largura da viewport */
     max-width: 625px; /* Limita a largura máxima */
     height: 410px; /* Mantém a altura fixa específica */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+}
+
+.iframe-totaltrimestre {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 90vw;  /* Utiliza 90% da largura da viewport */
+    max-width: 690px; /* Limita a largura máxima */
+    height: 510px; /* Mantém a altura fixa específica */
     margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
 }
 
@@ -359,6 +375,16 @@ footer {
         width: 90vw;  /* Utiliza 90% da largura da viewport */
         max-width: 625px; /* Limita a largura máxima */
         height: 410px; /* Mantém a altura fixa específica */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
+    }
+
+    .iframe-totaltrimestre {
+        border: 5px solid #fff;
+        border-radius: 10px;
+        opacity: 0.8;
+        width: 90vw;  /* Utiliza 90% da largura da viewport */
+        max-width: 690px; /* Limita a largura máxima */
+        height: 510px; /* Mantém a altura fixa específica */
         margin-bottom: 20px; /* Adiciona espaço abaixo do iframe */
     }
     
